@@ -69,32 +69,32 @@
         make.top.mas_equalTo(100+height+0.5);
         make.height.mas_equalTo(height);
     }];
-    NSMutableArray *arr = [NSMutableArray array];
-    for (int i = 0; i<4; i++) {
-        TestView *view = [TestView new];
-        [self.view addSubview:view];
-        [arr addObject:view];
-    }
-    NSArray *arr1 = [arr copy];
-    [arr1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(100 +height*2+1);
-        make.height.mas_equalTo(height);
-    }];
-    [arr1 mas_distributeViewsAlongAxis:0 withFixedSpacing:0.5 leadSpacing:-10 tailSpacing:0];
-    NSMutableArray *lastArray = [NSMutableArray array];
-    for (int i = 0; i<4; i++) {
-        TestView *view = [TestView new];
-        [self.view addSubview:view];
-        [lastArray addObject:view];
-    }
-    NSArray *lastArr = [lastArray copy];
-    [lastArr mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(100 +height*3+1.5);
-        make.height.mas_equalTo(height);
-    }];
-    [lastArr mas_distributeViewsAlongAxis:0 withFixedSpacing:0.5 leadSpacing:-10 tailSpacing:0];
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clickItem)];
-    [item2 addGestureRecognizer:tap];
+//    NSMutableArray *arr = [NSMutableArray array];
+//    for (int i = 0; i<4; i++) {
+//        TestView *view = [TestView new];
+//        [self.view addSubview:view];
+//        [arr addObject:view];
+//    }
+//    NSArray *arr1 = [arr copy];
+//    [arr1 mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(100 +height*2+1);
+//        make.height.mas_equalTo(height);
+//    }];
+//    [arr1 mas_distributeViewsAlongAxis:0 withFixedSpacing:0.5 leadSpacing:-10 tailSpacing:0];
+//    NSMutableArray *lastArray = [NSMutableArray array];
+//    for (int i = 0; i<4; i++) {
+//        TestView *view = [TestView new];
+//        [self.view addSubview:view];
+//        [lastArray addObject:view];
+//    }
+//    NSArray *lastArr = [lastArray copy];
+//    [lastArr mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(100 +height*3+1.5);
+//        make.height.mas_equalTo(height);
+//    }];
+//    [lastArr mas_distributeViewsAlongAxis:0 withFixedSpacing:0.5 leadSpacing:-10 tailSpacing:0];
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clickItem)];
+//    [item2 addGestureRecognizer:tap];
     
     
     

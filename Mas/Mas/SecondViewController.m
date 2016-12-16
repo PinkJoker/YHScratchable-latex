@@ -41,7 +41,7 @@
         [containerView addSubview:view];
     }
     // 执行九宫格布局
-//    [containerView.subviews mas_distributeSudokuViewsWithFixedItemWidth:0 fixedItemHeight:0 fixedLineSpacing:10 fixedInteritemSpacing:20 warpCount:3 topSpacing:10 bottomSpacing:10 leadSpacing:10 tailSpacing:10];
+  //  [containerView.subviews mas_distributeSudokuViewsWithFixedItemWidth:0 fixedItemHeight:0 fixedLineSpacing:10 fixedInteritemSpacing:20 warpCount:3 topSpacing:10 bottomSpacing:10 leadSpacing:10 tailSpacing:10];
     [containerView.subviews mas_distributeViewsAlongAxis:0 withFixedSpacing:0.5 leadSpacing:-10 tailSpacing:1];
 
 }
